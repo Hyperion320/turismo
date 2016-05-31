@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion Atlixco</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temaatlixco2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/jesus.jpg','imagenes/elmo2.jpg','imagenes/calen2.jpg','imagenes/conta.jpg','imagenes/tierra4.jpg','imagenes/zocalo.jpg','imagenes/villa2.jpg','imagenes/carmen2.jpg','imagenes/pesca2.jpg','imagenes/atlixco23.jpg','imagenes/comida2.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<font face="Comic Sans MS, cursive" color="#FF0000 size="+1"> <h1><center>Ven y conoce Atlixco, Puebla!</center></h1></font>
+</div>
+<div data-role="main" class="ui-content">
+ 
+<!-- Start WOWSlider.com -->
+<iframe src="visor/wowslider.html" style="width:950px;height:270.5px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Atracciones Turisticas</h2>
+<p>Lugares etc...</p>
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Como llegar?</h2>
+</a>
+</li> 
+
+</ul>
+</div>
+<br>
+<img src="imagenes/logo.png" width="411" height="92">
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div 
+  <img src="imagenes/1.png" width="46" height="46">
+</div>
+<div>
+  <h4> Atlixco | Turismo Atlixco </h4>
+  </div>
+ </div>
+ </div>
+ 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <font  color="#FFFFFF" size="+1"> <center><h1>Visita Atlixco</h1></center></font>
+ 
+  </div>
+  <div data-role="content" align="left">
+  <div>
+  <font  color="#FFFFFF"><h1>Ubicacion</h1></font>
+  <font  color="#000000"><p>Se ubica a 25 km de la ciudad de Puebla, capital del Estado y cuenta con dos importantes vías de acceso: la Carretera Federal 190 y la moderna Autopista Vía Atlixcáyotl.
+Actualmente, es una moderna ciudad con más de cien mil habitantes, que ha logrado armonizar su desarrollo urbano con el majestuoso legado de arquitectura colonial que dejaron sus fundadores (1579), y que hoy es uno de los principales atractivos turísticos de este municipio.</p> 
+<p>Comida</p>
+<h1>Delicioso!</h1>
+ Los 2 Mejores Restaurantes para Comer:
+ <ul>
+<li>Italian Coffee</li>
+<li>Enchiladas Maguito</li>
+</ul>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('comida2','','imagenes/comida2.jpg',1)"><img src="imagenes/comida.jpg" width="278" height="181" id="comida2"></a>
+<h1>Pueblo Mágico</h1>
+<p align="justify">Un Pueblo Mágico es una localidad que tiene atributos simbólicos, leyendas, historia, hechos trascendentes, cotidianidad, en fin magia que emana en cada una de sus manifestaciones socio-culturales.
+El Programa Pueblos Mágicos fue creado en 2001, como una estrategia para el desarrollo turístico, orientada a estructurar ofertas complementarias en este sector y diversificadas hacia el interior del país, está basado en los atributos históricos y culturales de localidades.</p>
+<p align="justify">Atlixco Pueblo Mágico. “Es un destino en construcción pero que tiene todo para llegar a ser, una visión que tenemos que compartir de cómo nos vemos y de cómo nos ven al exterior, Atlixco es un pueblo pintoresco que atrae turistas y a quienes buscan un lugar agradable donde vivir, pasear o conocer, podemos ser competitivos y ayudar a la economía local”, dijo Galeazzi Berra.
+
+Recordó que cada año se destinan 25 millones de pesos para diferentes eventos, promoción y apoyos de ferias, lo que hace que cada vez lleguen más visitantes y turistas.
+
+Actualmente Atlixco compite con otros 6 municipios del estado  para obtener la denominación, entre los que se encuentran Tochimilco y Tetela de Ocampo.</p></font>
+   <hr>
+   <br>
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Lugares Turisticos</h1>
+  <font  color="#FFFFFF"><p align="justify"> Una vuelta por el zócalo es una experiencia inolvidable, saboreando los ricos helados y sorbetes que venden cerca de allí, así mismo entrar a algún restaurante para degustar la cecina atlixquense, el guacamole, el consomé Atlixquense, o las truchas en sus diferentes modalidades. A tan solo una cuadra del centro, en el mercado encontrarás tortillas hechas a mano, expendios de cecina, tlacoyos, quesos frescos de la región o si eres de "gustoso paladar" podrás comer los originales chapulines fritos con sal y limón..</p></font>
+  
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('zocalo','','imagenes/zocalo.jpg',1)"><img src="imagenes/zocalo2.jpg" width="400" height="313" id="zocalo"></a>
+  <ul>
+<li>Villa Iluminada</li>
+<br>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('turista','','imagenes/villa2.jpg',1)"><img src="imagenes/villa.jpg" width="150" height="150" id="turista"></a>
+<br>
+<li>Ex Convento del Carmen</li>
+<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('carmen','','imagenes/carmen2.jpg',1)"><img src="imagenes/carmen.jpg" width="150" height="150" id="carmen"></a>
+<br>
+<li>Centro de pesca deportiva Amatzcalli</li>
+
+<br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('pescas','','imagenes/pesca2.jpg',1)"><img src="imagenes/pesca.jpg" width="150" height="150" id="pescas"></a>
+<li>Templo de la Merced</li>
+<br>
+  <img src="imagenes/templo.jpg" width="200" height="200">
+  <br>
+  <li>Festival Dia De Muertos</li>
+  
+  <img src="imagenes/dead.jpg" width="200" height="200">
+  </ul>
+</div>
+   <hr>
+   
+  <iframe width="80%" height="80%" src="https://www.youtube.com/embed/hJE4SR4tiww" frameborder="0" allowfullscreen></iframe>
+  <br>
+  <hr>
+  <hr>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" >
+  <h4>Atlixco Turismo| visitmexico.com</h4>
+  </div>
+  </div>
+  </div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1><font color = "white">Destino</font></h1>
+ 
+  </div>
+  <div data-role="content" align="left">
+  <div>
+  <h1>¿Como llegar?</h1>
+  <p align="justify">Desde la Ciudad de México toma la autopista 150D México – Puebla, y a la altura del kilómetro 97 encontrarás los señalamientos que te conducirán hacia Atlixco.</p>
+   <br>
+ <div data-role="collapsible" data-content-theme="false">
+  <h1>Mapa</h1>
+  
+  <img src="imagenes/map.png" width="500" height="700">
+  
+  </ul>
+</div>
+  <br>
+  <hr>
+  <hr>
+  <br>
+  
+  <br>
+<div data-role="collapsible" data-content-theme="false">
+  <h1>Vamos!</h1>
+  Si aun tienes duda de viajar. Tal vez esto ayude. Clic <a href="http://www.mexicoquerido.com.mx/puebla/es/destinos/dePdes.php?_idDestino=22">Aquí</a>!
+     
+  <img src="imagenes/tapete.jpg" width="540" height="439"></div>
+
+  <hr>
+  <hr>
+ <br>
+  <div>
+  <h1>Más Lugares para Visitar en Atlixco</h1>
+  <p align="justify">CERRO DE SAN MIGUEL. Esta capilla se construyo en el siglo XVIII, se encuentra ubicada en la cima del cerro de San Miguel.
+
+Esta fiesta llega a coincidir con la fecha del Atlixcayotl (último domingo de septiembre), pero hay que recalcar que son dos eventos totalmente diferentes.
+Su construcción es de tipo popular y muy pintoresca, consta de una puerta de madera grande, ventana, un nicho, todo encuadrado por dos contrafuertes y pintada en amarillo y blanco por vieja tradición.</p>
+
+  <img src="imagenes/cerro.jpg" width="440" height="480"><br>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Atlixco de Las Flores</h1>
+   
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('floress','','imagenes/atlixco23.jpg',1)"><img src="imagenes/flores.jpg" width="400" height="400" id="floress"></a></div>
+  <br>
+  <hr>
+  <h1>Hoteles Cercanos: <iframe src="https://www.zonaturistica.com/atractivo-turistico/1159/cerro-de-san-miguel-atlixco.html" style="width:950px;height:270.5px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe> </h1>
+ <hr>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Elaborador</h1>
+   <ul>
+   <li>Por: David Corzo López.</li> 
+   <li>CBTIS 16 Atlixco.</li> 
+   <li>Programacion.</li>
+   <li>Diseña Aplicaciones Móviles</li>
+   </ul>
+   </div>
+<br>
+<hr>
+<hr>
+  </div>
+<div data-role="footer" data-theme="a">
+  <h4>Atlixco| visitmexico.com | Turismo Atlixco</h4>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
